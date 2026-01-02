@@ -23,6 +23,20 @@ if (menuToggle) {
     });
 }
 
+// Hero Slideshow
+const slides = document.querySelectorAll('.hero-slideshow .slide');
+let currentSlide = 0;
+
+function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+if (slides.length > 0) {
+    setInterval(nextSlide, 2000); // Change every 2 seconds
+}
+
 // Dropdown Toggle (Multiple)
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 

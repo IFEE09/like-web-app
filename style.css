@@ -14,8 +14,10 @@
     --text-dark: #2f3542;
 
     /* Typography */
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'Cormorant Garamond', serif;
     --font-body: 'Inter', sans-serif;
+    --font-like: 'Playfair Display', serif;
+    /* Keep for "Like" word */
 
     /* Transitions */
     --transition-fast: 0.3s ease;
@@ -192,15 +194,37 @@ nav {
 #hero {
     height: 100vh;
     width: 100%;
-    background-image: url('assets/fondos/599941942_850400241074895_2636085479842782943_n.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-    /* Fixed often has issues on mobile browsers */
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+/* Hero Slideshow */
+.hero-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-slideshow .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slideshow .slide.active {
+    opacity: 1;
 }
 
 .hero-overlay {
@@ -232,6 +256,8 @@ nav {
 .hero-title .highlight {
     color: var(--primary-color);
     font-style: italic;
+    font-family: var(--font-like);
+    /* Keep Playfair for "Like" */
 }
 
 .hero-subtitle {
@@ -303,6 +329,31 @@ nav {
     color: #ffffff !important;
     border: 2px solid var(--primary-color);
     box-shadow: 0 4px 15px rgba(200, 9, 19, 0.4);
+    animation: btnFloat 4s ease-in-out infinite;
+}
+
+/* Themed Line Up Buttons - Mobile Base */
+.btn-terranorte {
+    background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+    color: #ffffff !important;
+    border: 2px solid #0f3460;
+    box-shadow: 0 4px 15px rgba(15, 52, 96, 0.4);
+    animation: btnFloat 4s ease-in-out infinite;
+}
+
+.btn-dorada {
+    background: linear-gradient(135deg, #c72c41 0%, #801336 100%);
+    color: #ffffff !important;
+    border: 2px solid #c72c41;
+    box-shadow: 0 4px 15px rgba(199, 44, 65, 0.4);
+    animation: btnFloat 4s ease-in-out infinite;
+}
+
+.btn-caucel {
+    background: linear-gradient(135deg, #1f4068 0%, #162447 100%);
+    color: #ffffff !important;
+    border: 2px solid #1f4068;
+    box-shadow: 0 4px 15px rgba(31, 64, 104, 0.4);
     animation: btnFloat 4s ease-in-out infinite;
 }
 
@@ -741,6 +792,55 @@ nav {
         color: #ffffff !important;
         transform: translateY(-5px) scale(1.02);
         box-shadow: 0 8px 25px rgba(200, 9, 19, 0.6);
+        animation-play-state: paused;
+    }
+
+    /* Themed Line Up Buttons */
+    .btn-terranorte {
+        background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+        color: #ffffff !important;
+        border: 2px solid #0f3460;
+        box-shadow: 0 4px 15px rgba(15, 52, 96, 0.4);
+        animation: btnFloat 4s ease-in-out infinite;
+    }
+
+    .btn-terranorte:hover {
+        background: transparent;
+        border-color: #ffffff;
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(15, 52, 96, 0.6);
+        animation-play-state: paused;
+    }
+
+    .btn-dorada {
+        background: linear-gradient(135deg, #c72c41 0%, #801336 100%);
+        color: #ffffff !important;
+        border: 2px solid #c72c41;
+        box-shadow: 0 4px 15px rgba(199, 44, 65, 0.4);
+        animation: btnFloat 4s ease-in-out infinite;
+    }
+
+    .btn-dorada:hover {
+        background: transparent;
+        border-color: #ffffff;
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(199, 44, 65, 0.6);
+        animation-play-state: paused;
+    }
+
+    .btn-caucel {
+        background: linear-gradient(135deg, #1f4068 0%, #162447 100%);
+        color: #ffffff !important;
+        border: 2px solid #1f4068;
+        box-shadow: 0 4px 15px rgba(31, 64, 104, 0.4);
+        animation: btnFloat 4s ease-in-out infinite;
+    }
+
+    .btn-caucel:hover {
+        background: transparent;
+        border-color: #ffffff;
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(31, 64, 104, 0.6);
         animation-play-state: paused;
     }
 
