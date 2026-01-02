@@ -12,6 +12,17 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile Menu Toggle
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+    });
+}
+
 // Dropdown Toggle (Multiple)
 const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
 
