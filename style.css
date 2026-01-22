@@ -624,6 +624,7 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s ease, border-color 0.4s ease;
+  cursor: pointer;
 }
 
 .branch-slide img {

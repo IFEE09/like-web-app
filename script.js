@@ -115,15 +115,16 @@ document.addEventListener("click", () => {
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImage");
 const modalClose = document.querySelector(".modal-close");
-const lineupItems = document.querySelectorAll(".lineup-item");
-
-// Open modal when clicking on lineup item
-lineupItems.forEach((item) => {
+// Open modal when clicking on lineup item or branch slide
+const allGalleryItems = document.querySelectorAll(".lineup-item, .branch-slide");
+allGalleryItems.forEach((item) => {
   item.addEventListener("click", () => {
     const img = item.querySelector("img");
-    modal.classList.add("active");
-    modalImg.src = img.src;
-    document.body.style.overflow = "hidden"; // Prevent scrolling
+    if (modal && modalImg && img) {
+      modal.classList.add("active");
+      modalImg.src = img.src;
+      document.body.style.overflow = "hidden"; // Prevent scrolling
+    }
   });
 });
 
