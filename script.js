@@ -221,3 +221,36 @@ if (carteleraModal && carteleraBtns.length > 0) {
     }
   });
 }
+
+// ===== Reviews Carousel Functionality =====
+function initReviewsCarousel() {
+  const track = document.querySelector(".reviews-track");
+  if (!track) return;
+
+  const slides = Array.from(track.children);
+  const nextButton = document.querySelector(".review-next");
+  const prevButton = document.querySelector(".review-prev");
+  let currentIndex = 0;
+
+  const updateSlide = (index) => {
+    track.style.transform = `translateX(-${index * 100}%)`;
+    currentIndex = index;
+  };
+
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+      let nextIndex = (currentIndex + 1) % slides.length;
+      updateSlide(nextIndex);
+    });
+  }
+
+  if (prevButton) {
+    prevButton.addEventListener("click", () => {
+      let prevIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateSlide(prevIndex);
+    });
+  }
+}
+
+// Initialize reviews
+initReviewsCarousel();
