@@ -1,450 +1,416 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Like - Un espacio gastronómico único con 3 experiencias culinarias inolvidables."
-    />
-    <title>LIKE | Diversión, Sabor, Cultura</title>
-    <!-- Favicon -->
-    <link rel="icon" href="assets/logo/favicon.png" type="image/png" />
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- Icons (RemixIcon) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Like - Un espacio gastronómico único con 3 experiencias culinarias inolvidables." />
+  <title>LIKE | Diversión, Sabor, Cultura</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo/favicon.png" type="image/png" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Icons (RemixIcon) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-  <body>
-    <!-- Navigation -->
-    <header id="navbar">
-      <div class="container">
-        <nav>
-          <a href="#" class="logo">
-            <img src="assets/logo/logolike.png" alt="LIKE Logo" />
-          </a>
-          <!-- Hamburger Menu -->
-          <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header id="navbar">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">
+          <img src="assets/logo/logolike.png" alt="LIKE Logo" />
+        </a>
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <!-- Inicio Link -->
+          <a href="index.html" class="nav-item">Inicio</a>
+
+          <!-- Sucursales Dropdown -->
+          <div class="dropdown-container">
+            <button class="nav-item dropdown-toggle">
+              Sucursales <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="terranorte.html">Terranorte</a>
+              <a href="caucel.html">Caucel</a>
+              <a href="dorada.html">Dorada</a>
+            </div>
           </div>
-          <div class="nav-links" id="navLinks">
 
-            <!-- Sucursales Dropdown -->
-            <div class="dropdown-container">
-              <button class="nav-item dropdown-toggle">
-                Sucursales <i class="ri-arrow-down-s-line"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a href="terranorte.html">Terranorte</a>
-                <a href="caucel.html">Caucel</a>
-                <a href="dorada.html">Dorada</a>
-              </div>
+          <!-- Experiencias Dropdown -->
+          <div class="dropdown-container">
+            <button class="nav-item dropdown-toggle">
+              Experiencias <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#">Lunes de Rock</a>
+              <a href="#">I Love Salsa</a>
+              <a href="#">Primera Fila</a>
+              <a href="#">Cumpleañero Like</a>
             </div>
-
-            <!-- Experiencias Dropdown -->
-            <div class="dropdown-container">
-              <button class="nav-item dropdown-toggle">
-                Experiencias <i class="ri-arrow-down-s-line"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a href="#">Lunes de Rock</a>
-                <a href="#">I Love Salsa</a>
-                <a href="#">Primera Fila</a>
-                <a href="#">Cumpleañero Like</a>
-              </div>
-            </div>
-
-            <!-- Menús Dropdown -->
-            <div class="dropdown-container">
-              <button class="nav-item dropdown-toggle">
-                Menús <i class="ri-arrow-down-s-line"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a href="terranorte.html">Terranorte</a>
-                <a href="caucel.html">Caucel</a>
-                <a href="dorada.html">Dorada</a>
-              </div>
-            </div>
-
-            <!-- Blog Link -->
-            <a href="#blog" class="nav-item">Blog</a>
           </div>
-        </nav>
-      </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-      <!-- Slideshow Background -->
-      <div class="hero-slideshow">
-        <div
-          class="slide active"
-          style="
+          <!-- Menús Dropdown -->
+          <div class="dropdown-container">
+            <button class="nav-item dropdown-toggle">
+              Menús <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a href="terranorte.html">Terranorte</a>
+              <a href="caucel.html">Caucel</a>
+              <a href="dorada.html">Dorada</a>
+            </div>
+          </div>
+
+          <!-- Blog Link -->
+          <a href="#blog" class="nav-item">Blog</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <!-- Slideshow Background -->
+    <div class="hero-slideshow">
+      <div class="slide active" style="
             background-image: url(&quot;assets/fondos/599941942_850400241074895_2636085479842782943_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/605102615_857792127002373_7475398924201788806_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/605682178_853549650759954_8997846778236270796_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/605898416_855528413895411_3351588006727060302_n.jpg&quot;);
-          "
-        ></div>
-        <div
-          class="slide"
-          style="
+          "></div>
+      <div class="slide" style="
             background-image: url(&quot;assets/fondos/607661501_857792130335706_3555240468987206508_n.jpg&quot;);
-          "
-        ></div>
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content container text-center">
-        <h1 class="hero-title">
-          La mejor experiencia de <span class="highlight">música en vivo</span> en Mérida
-        </h1>
-        <p class="hero-subtitle">Shows diferentes todos los días</p>
-        <a href="https://wa.me/529995059134" target="_blank" class="btn btn-primary">Reserva aquí</a>
-      </div>
-      <div class="scroll-down">
-        <i class="ri-arrow-down-line"></i>
-      </div>
-    </section>
+          "></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container text-center">
+      <h1 class="hero-title">
+        La mejor experiencia de <span class="highlight">música en vivo</span> en Mérida
+      </h1>
+      <p class="hero-subtitle">Shows diferentes todos los días</p>
+      <a href="https://wa.me/529995059134" target="_blank" class="btn btn-primary">Reserva aquí</a>
+    </div>
+    <div class="scroll-down">
+      <i class="ri-arrow-down-line"></i>
+    </div>
+  </section>
 
-    <!-- Line Up Sections -->
+  <!-- Line Up Sections -->
 
-    <!-- Line Up Terranorte -->
-    <section class="lineup-section-new" id="lineup-terranorte">
-      <div class="lineup-bg" style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');"></div>
-      <div class="lineup-overlay"></div>
-      <div class="container lineup-content-wrapper">
-        <div class="lineup-text-content">
-          <span class="lineup-tag">FEEL THE MUSIC</span>
-          <div class="lineup-description">
-            <p>En <strong>Like</strong> no vienes solo a salir, vienes a <strong>vivir un show</strong>. Cada noche se transforma en una experiencia con <strong>música en vivo en Mérida</strong> con artistas de alto nivel, luces, energía y un ambiente que se siente desde que cruzas la puerta.</p>
-            <p>Aquí el escenario es protagonista. Desde tributos icónicos, noches temáticas, DJs y bandas en vivo, hasta experiencias que convierten cualquier día de la semana en un plan imperdible.</p>
-            <p><strong>Like es música, es fiesta, es comunidad.</strong> Un lugar donde cantas, bailas, brindas y te quedas con ganas de volver.</p>
-            <p>Like, el lugar que lo tiene todo.</p>
-          </div>
-        </div>
-        <div class="lineup-carousel-container">
-          <div class="lineup-carousel" id="terranorteCarousel">
-            <button class="carousel-arrow carousel-prev" aria-label="Anterior">
-              <i class="ri-arrow-left-s-line"></i>
-            </button>
-            <div class="carousel-slides">
-              <div class="carousel-slide active">
-                <img src="assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg" alt="Terranorte 1" />
-              </div>
-              <div class="carousel-slide">
-                <img src="assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg" alt="Terranorte 2" />
-              </div>
-              <div class="carousel-slide">
-                <img src="assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg" alt="Terranorte 3" />
-              </div>
-            </div>
-            <button class="carousel-arrow carousel-next" aria-label="Siguiente">
-              <i class="ri-arrow-right-s-line"></i>
-            </button>
-          </div>
+  <!-- Line Up Terranorte -->
+  <section class="lineup-section-new" id="lineup-terranorte">
+    <div class="lineup-bg"
+      style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');"></div>
+    <div class="lineup-overlay"></div>
+    <div class="container lineup-content-wrapper">
+      <div class="lineup-text-content">
+        <span class="lineup-tag">FEEL THE MUSIC</span>
+        <div class="lineup-description">
+          <p>En <strong>Like</strong> no vienes solo a salir, vienes a <strong>vivir un show</strong>. Cada noche se
+            transforma en una experiencia con <strong>música en vivo en Mérida</strong> con artistas de alto nivel,
+            luces, energía y un ambiente que se siente desde que cruzas la puerta.</p>
+          <p>Aquí el escenario es protagonista. Desde tributos icónicos, noches temáticas, DJs y bandas en vivo, hasta
+            experiencias que convierten cualquier día de la semana en un plan imperdible.</p>
+          <p><strong>Like es música, es fiesta, es comunidad.</strong> Un lugar donde cantas, bailas, brindas y te
+            quedas con ganas de volver.</p>
+          <p>Like, el lugar que lo tiene todo.</p>
         </div>
       </div>
-
-    </section>
-
-
-    <!-- Sucursales Section -->
-    <section id="sucursales" class="sucursales-section">
-      <div class="sucursales-overlay"></div>
-      <div class="container">
-        <div class="sucursales-header">
-          <h2>Conoce nuestras sucursales</h2>
-        </div>
-        <div class="sucursales-grid">
-          <div class="sucursal-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <h3>LIKE TERRANORTE</h3>
-              </div>
-              <div class="card-back" style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');">
-                <div class="card-back-overlay"></div>
-                <div class="card-back-content">
-                  <h4>LIKE TERRANORTE</h4>
-                  <a href="terranorte.html" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
+      <div class="lineup-carousel-container">
+        <div class="lineup-carousel" id="terranorteCarousel">
+          <button class="carousel-arrow carousel-prev" aria-label="Anterior">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          <div class="carousel-slides">
+            <div class="carousel-slide active">
+              <img src="assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg" alt="Terranorte 1" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg" alt="Terranorte 2" />
+            </div>
+            <div class="carousel-slide">
+              <img src="assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg" alt="Terranorte 3" />
             </div>
           </div>
-          
-          <div class="sucursal-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <h3>LIKE CAUCEL</h3>
-              </div>
-              <div class="card-back" style="background-image: url('assets/fondos/605102615_857792127002373_7475398924201788806_n.jpg');">
-                <div class="card-back-overlay"></div>
-                <div class="card-back-content">
-                  <h4>LIKE CAUCEL</h4>
-                  <a href="caucel.html" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="sucursal-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <h3>LIKE DORADA</h3>
-              </div>
-              <div class="card-back" style="background-image: url('assets/fondos/605682178_853549650759954_8997846778236270796_n.jpg');">
-                <div class="card-back-overlay"></div>
-                <div class="card-back-content">
-                  <h4>LIKE DORADA</h4>
-                  <a href="dorada.html" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <button class="carousel-arrow carousel-next" aria-label="Siguiente">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
         </div>
       </div>
-    </section>
-
-
-    <!-- Image Modal -->
-    <div id="imageModal" class="image-modal">
-      <span class="modal-close">&times;</span>
-      <img class="modal-content" id="modalImage" />
     </div>
 
-    <!-- Experiencias Section -->
-    <section id="experiencias" class="section-padding experiencias-section">
-      <div class="container">
-        <h2 class="section-title text-center">Nuestras Experiencias</h2>
-        
-        <div class="experiencias-slider-wrapper">
-          <div class="experiencias-slider">
-            <!-- Original Cards -->
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>Lunes de Rock</h3>
-                <p>Vive la mejor música rock en vivo</p>
+  </section>
+
+
+  <!-- Sucursales Section -->
+  <section id="sucursales" class="sucursales-section">
+    <div class="sucursales-overlay"></div>
+    <div class="container">
+      <div class="sucursales-header">
+        <h2>Conoce nuestras sucursales</h2>
+      </div>
+      <div class="sucursales-grid">
+        <div class="sucursal-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>LIKE TERRANORTE</h3>
+            </div>
+            <div class="card-back"
+              style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <h4>LIKE TERRANORTE</h4>
+                <a href="terranorte.html" class="btn btn-primary">Ver más</a>
               </div>
             </div>
-            
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>I Love Salsa</h3>
-                <p>Baila al ritmo de la mejor salsa</p>
+          </div>
+        </div>
+
+        <div class="sucursal-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>LIKE CAUCEL</h3>
+            </div>
+            <div class="card-back"
+              style="background-image: url('assets/fondos/605102615_857792127002373_7475398924201788806_n.jpg');">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <h4>LIKE CAUCEL</h4>
+                <a href="caucel.html" class="btn btn-primary">Ver más</a>
               </div>
             </div>
-            
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>Primera Fila</h3>
-                <p>Disfruta de shows exclusivos</p>
-              </div>
+          </div>
+        </div>
+
+        <div class="sucursal-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <h3>LIKE DORADA</h3>
             </div>
-            
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/605898416_855528413895411_3351588006727060302_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>Cumpleañero Like</h3>
-                <p>Celebra tu día especial con nosotros</p>
-              </div>
-            </div>
-            
-            <!-- Duplicate Cards for Infinite Effect -->
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>Lunes de Rock</h3>
-                <p>Vive la mejor música rock en vivo</p>
-              </div>
-            </div>
-            
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>I Love Salsa</h3>
-                <p>Baila al ritmo de la mejor salsa</p>
-              </div>
-            </div>
-            
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>Primera Fila</h3>
-                <p>Disfruta de shows exclusivos</p>
-              </div>
-            </div>
-            
-            <div class="experiencia-card">
-              <div class="experiencia-image" style="background-image: url('assets/fondos/605898416_855528413895411_3351588006727060302_n.jpg');"></div>
-              <div class="experiencia-content">
-                <h3>Cumpleañero Like</h3>
-                <p>Celebra tu día especial con nosotros</p>
+            <div class="card-back"
+              style="background-image: url('assets/fondos/605682178_853549650759954_8997846778236270796_n.jpg');">
+              <div class="card-back-overlay"></div>
+              <div class="card-back-content">
+                <h4>LIKE DORADA</h4>
+                <a href="dorada.html" class="btn btn-primary">Ver más</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 
-    <!-- Blog Yucatán Section -->
-    <section id="blog" class="section-padding blog-section">
-      <div class="container">
-        <h2 class="section-title text-center">
-          Blog <span class="highlight">Yucatán</span>
-        </h2>
-        <p class="section-subtitle text-center">Curiosidades y cultura</p>
-        <div class="blog-grid">
-          <!-- Blog Card 1 -->
-          <article class="blog-card">
-            <div
-              class="blog-image"
-              style="
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
+
+  <!-- Experiencias Section -->
+  <section id="experiencias" class="section-padding experiencias-section">
+    <div class="container">
+      <h2 class="section-title text-center">Nuestras Experiencias</h2>
+
+      <div class="experiencias-slider-wrapper">
+        <div class="experiencias-slider">
+          <!-- Original Cards -->
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>Lunes de Rock</h3>
+              <p>Vive la mejor música rock en vivo</p>
+            </div>
+          </div>
+
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>I Love Salsa</h3>
+              <p>Baila al ritmo de la mejor salsa</p>
+            </div>
+          </div>
+
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>Primera Fila</h3>
+              <p>Disfruta de shows exclusivos</p>
+            </div>
+          </div>
+
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/605898416_855528413895411_3351588006727060302_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>Cumpleañero Like</h3>
+              <p>Celebra tu día especial con nosotros</p>
+            </div>
+          </div>
+
+          <!-- Duplicate Cards for Infinite Effect -->
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>Lunes de Rock</h3>
+              <p>Vive la mejor música rock en vivo</p>
+            </div>
+          </div>
+
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>I Love Salsa</h3>
+              <p>Baila al ritmo de la mejor salsa</p>
+            </div>
+          </div>
+
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>Primera Fila</h3>
+              <p>Disfruta de shows exclusivos</p>
+            </div>
+          </div>
+
+          <div class="experiencia-card">
+            <div class="experiencia-image"
+              style="background-image: url('assets/fondos/605898416_855528413895411_3351588006727060302_n.jpg');"></div>
+            <div class="experiencia-content">
+              <h3>Cumpleañero Like</h3>
+              <p>Celebra tu día especial con nosotros</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog Yucatán Section -->
+  <section id="blog" class="section-padding blog-section">
+    <div class="container">
+      <h2 class="section-title text-center">
+        Blog <span class="highlight">Yucatán</span>
+      </h2>
+      <p class="section-subtitle text-center">Curiosidades y cultura</p>
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <article class="blog-card">
+          <div class="blog-image" style="
                 background-image: url(&quot;assets/fondos/605151469_852841264164126_2700744964984188461_n.jpg&quot;);
-              "
-            >
-              <span class="blog-tag">Cultura</span>
-            </div>
-            <div class="blog-content">
-              <h3>La Trova Yucateca</h3>
-              <p>
-                Descubre la historia del romántico género musical que nació en
-                Mérida y conquistó al mundo.
-              </p>
-              <a href="#" class="btn-text"
-                >Leer más <i class="ri-arrow-right-line"></i
-              ></a>
-            </div>
-          </article>
+              ">
+            <span class="blog-tag">Cultura</span>
+          </div>
+          <div class="blog-content">
+            <h3>La Trova Yucateca</h3>
+            <p>
+              Descubre la historia del romántico género musical que nació en
+              Mérida y conquistó al mundo.
+            </p>
+            <a href="#" class="btn-text">Leer más <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
 
-          <!-- Blog Card 2 -->
-          <article class="blog-card">
-            <div
-              class="blog-image"
-              style="
+        <!-- Blog Card 2 -->
+        <article class="blog-card">
+          <div class="blog-image" style="
                 background-image: url(&quot;assets/fondos/597781448_847540491360870_4129835947797060994_n.jpg&quot;);
-              "
-            >
-              <span class="blog-tag">Gastronomía</span>
-            </div>
-            <div class="blog-content">
-              <h3>Cochinita Pibil</h3>
-              <p>
-                El platillo más emblemático de Yucatán: historia, tradición y
-                los secretos de su preparación.
-              </p>
-              <a href="#" class="btn-text"
-                >Leer más <i class="ri-arrow-right-line"></i
-              ></a>
-            </div>
-          </article>
+              ">
+            <span class="blog-tag">Gastronomía</span>
+          </div>
+          <div class="blog-content">
+            <h3>Cochinita Pibil</h3>
+            <p>
+              El platillo más emblemático de Yucatán: historia, tradición y
+              los secretos de su preparación.
+            </p>
+            <a href="#" class="btn-text">Leer más <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
 
-          <!-- Blog Card 3 -->
-          <article class="blog-card">
-            <div
-              class="blog-image"
-              style="
+        <!-- Blog Card 3 -->
+        <article class="blog-card">
+          <div class="blog-image" style="
                 background-image: url(&quot;assets/fondos/601934640_855528417228744_3921689702876607293_n.jpg&quot;);
-              "
-            >
-              <span class="blog-tag">Historia</span>
-            </div>
-            <div class="blog-content">
-              <h3>Los Cenotes Sagrados</h3>
-              <p>
-                Explora el significado espiritual de los cenotes para la
-                civilización maya.
-              </p>
-              <a href="#" class="btn-text"
-                >Leer más <i class="ri-arrow-right-line"></i
-              ></a>
-            </div>
-          </article>
-        </div>
+              ">
+            <span class="blog-tag">Historia</span>
+          </div>
+          <div class="blog-content">
+            <h3>Los Cenotes Sagrados</h3>
+            <p>
+              Explora el significado espiritual de los cenotes para la
+              civilización maya.
+            </p>
+            <a href="#" class="btn-text">Leer más <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container text-center">
-        <div class="footer-logo">
-          <img
-            src="assets/logo/logolike.png"
-            alt="LIKE Logo"
-            style="height: 60px"
-          />
-        </div>
-        <div class="social-links">
-          <a href="#"><i class="ri-instagram-line"></i></a>
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-          <a href="#"><i class="ri-whatsapp-line"></i></a>
-        </div>
-        <p class="copyright">
-          &copy; 2026 LIKE Espacio Gastronómico. Todos los derechos reservados.
-        </p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <div class="footer-logo">
+        <img src="assets/logo/logolike.png" alt="LIKE Logo" style="height: 60px" />
       </div>
-    </footer>
+      <div class="social-links">
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-whatsapp-line"></i></a>
+      </div>
+      <p class="copyright">
+        &copy; 2026 LIKE Espacio Gastronómico. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a
-      href="https://wa.me/529995059134"
-      class="whatsapp-float"
-      target="_blank"
-    >
-      <i class="ri-whatsapp-line"></i>
-      <span>Reserva</span>
-    </a>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/529995059134" class="whatsapp-float" target="_blank">
+    <i class="ri-whatsapp-line"></i>
+    <span>Reserva</span>
+  </a>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
