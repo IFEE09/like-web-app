@@ -111,12 +111,51 @@ document.addEventListener("click", () => {
   });
 });
 
+// ===== Single Photo Slider Functionality =====
+function initSingleSlider(sliderId) {
+  const slider = document.getElementById(sliderId);
+  if (!slider) return;
+
+  const slides = slider.querySelectorAll(".slide");
+  const nextBtn = slider.querySelector(".next");
+  const prevBtn = slider.querySelector(".prev");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("active");
+      if (i === index) {
+        slide.classList.add("active");
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  if (nextBtn) nextBtn.addEventListener("click", nextSlide);
+  if (prevBtn) prevBtn.addEventListener("click", prevSlide);
+
+  // Auto-advance every 5 seconds
+  setInterval(nextSlide, 5000);
+}
+
+// Initialize sliders
+initSingleSlider("branchSingleSlider");
+
 // Image Modal Functionality
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImage");
 const modalClose = document.querySelector(".modal-close");
 // Open modal when clicking on lineup item or branch slide
-const allGalleryItems = document.querySelectorAll(".lineup-item, .branch-slide");
+const allGalleryItems = document.querySelectorAll(".lineup-item, .branch-slide, .branch-single-slider .slide");
 allGalleryItems.forEach((item) => {
   item.addEventListener("click", () => {
     const img = item.querySelector("img");
