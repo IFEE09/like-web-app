@@ -20,8 +20,35 @@ if (menuToggle) {
   menuToggle.addEventListener("click", () => {
     menuToggle.classList.toggle("active");
     navLinks.classList.toggle("active");
+    // Toggle body scroll
+    if (navLinks.classList.contains("active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
   });
 }
+
+// Close mobile menu when clicking a link
+document.querySelectorAll(".nav-item").forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // Only close if it's not a dropdown toggle
+    if (!link.classList.contains("dropdown-toggle")) {
+      menuToggle.classList.remove("active");
+      navLinks.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  });
+});
+
+// Also close menu when clicking on a dropdown link
+document.querySelectorAll(".dropdown-menu a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuToggle.classList.remove("active");
+    navLinks.classList.remove("active");
+    document.body.style.overflow = "";
+  });
+});
 
 // Hero Slideshow
 const slides = document.querySelectorAll(".hero-slideshow .slide");
