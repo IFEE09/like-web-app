@@ -191,3 +191,32 @@ function initCarousel(carouselId) {
 
 // Initialize carousels
 initCarousel("terranorteCarousel");
+
+// Cartelera Modal Logic
+const carteleraModal = document.getElementById("carteleraModal");
+const carteleraBtns = document.querySelectorAll(".btn-cartelera");
+const carteleraClose = document.querySelector(".cartelera-close");
+
+if (carteleraModal && carteleraBtns.length > 0) {
+  carteleraBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      carteleraModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  if (carteleraClose) {
+    carteleraClose.addEventListener("click", () => {
+      carteleraModal.classList.remove("active");
+      document.body.style.overflow = "";
+    });
+  }
+
+  carteleraModal.addEventListener("click", (e) => {
+    if (e.target === carteleraModal) {
+      carteleraModal.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+  });
+}
