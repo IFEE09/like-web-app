@@ -4,325 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caucel | LIKE</title>
+    <meta name="description" content="LIKE Caucel - La mejor experiencia de música en vivo en Mérida.">
+    <title>Like Caucel | Música, Sabor, Cultura</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/logo/favicon.png" type="image/png">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1b1b2f 0%, #1f4068 50%, #162447 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            overflow: hidden;
-            position: relative;
-        }
-
-        /* Animated background particles */
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 0;
-        }
-
-        .particle {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 15s infinite;
-        }
-
-        .particle:nth-child(1) {
-            left: 10%;
-            animation-delay: 0s;
-            animation-duration: 12s;
-        }
-
-        .particle:nth-child(2) {
-            left: 20%;
-            animation-delay: 2s;
-            animation-duration: 14s;
-        }
-
-        .particle:nth-child(3) {
-            left: 30%;
-            animation-delay: 4s;
-            animation-duration: 11s;
-        }
-
-        .particle:nth-child(4) {
-            left: 40%;
-            animation-delay: 1s;
-            animation-duration: 16s;
-        }
-
-        .particle:nth-child(5) {
-            left: 50%;
-            animation-delay: 3s;
-            animation-duration: 13s;
-        }
-
-        .particle:nth-child(6) {
-            left: 60%;
-            animation-delay: 5s;
-            animation-duration: 15s;
-        }
-
-        .particle:nth-child(7) {
-            left: 70%;
-            animation-delay: 2s;
-            animation-duration: 12s;
-        }
-
-        .particle:nth-child(8) {
-            left: 80%;
-            animation-delay: 4s;
-            animation-duration: 14s;
-        }
-
-        .particle:nth-child(9) {
-            left: 90%;
-            animation-delay: 1s;
-            animation-duration: 11s;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) rotate(0deg);
-                opacity: 0;
-            }
-
-            10% {
-                opacity: 1;
-            }
-
-            90% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-100vh) rotate(720deg);
-                opacity: 0;
-            }
-        }
-
-        .container {
-            text-align: center;
-            z-index: 1;
-            padding: 20px;
-        }
-
-        .logo {
-            margin-bottom: 40px;
-        }
-
-        .logo img {
-            height: 80px;
-            animation: pulse 2s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.05);
-            }
-        }
-
-        .icon-construction {
-            font-size: 5rem;
-            color: #1f4068;
-            margin-bottom: 30px;
-            display: inline-block;
-            -webkit-animation: spin 4s linear infinite;
-            -moz-animation: spin 4s linear infinite;
-            animation: spin 4s linear infinite;
-        }
-
-        @-webkit-keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
-
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
-        }
-
-        @-moz-keyframes spin {
-            0% {
-                -moz-transform: rotate(0deg);
-            }
-
-            100% {
-                -moz-transform: rotate(360deg);
-            }
-        }
-
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        h1 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.5rem;
-            margin-bottom: 15px;
-            animation: fadeInUp 1s ease;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-bottom: 40px;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .progress-bar {
-            width: 300px;
-            max-width: 90%;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            margin: 0 auto 40px;
-            overflow: hidden;
-            animation: fadeInUp 1s ease 0.4s both;
-        }
-
-        .progress-fill {
-            height: 100%;
-            width: 30%;
-            background: linear-gradient(90deg, #1f4068, #162447, #1f4068);
-            background-size: 200% 100%;
-            border-radius: 10px;
-            animation: shimmer 2s infinite;
-        }
-
-        @keyframes shimmer {
-            0% {
-                background-position: 200% 0;
-            }
-
-            100% {
-                background-position: -200% 0;
-            }
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: linear-gradient(135deg, #1f4068 0%, #162447 100%);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            animation: fadeInUp 1s ease 0.6s both;
-        }
-
-        .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(31, 64, 104, 0.4);
-            border-color: #fff;
-            background: transparent;
-        }
-
-        .btn i {
-            margin-right: 8px;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .coming-soon {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.5);
-            animation: fadeInUp 1s ease 0.8s both;
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Animated Particles -->
-    <div class="particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-
-    <div class="container">
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/logo/logolike.png" alt="LIKE Logo">
-            </a>
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logolike.png" alt="LIKE Logo" />
+                </a>
+                <!-- Hamburger Menu -->
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <!-- Sucursales Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Sucursales <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="terranorte.html">Terranorte</a>
+                            <a href="caucel.html">Caucel</a>
+                            <a href="dorada.html">Dorada</a>
+                        </div>
+                    </div>
+                    <!-- Experiencias Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Experiencias <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#">Lunes de Rock</a>
+                            <a href="#">I Love Salsa</a>
+                            <a href="#">Primera Fila</a>
+                            <a href="#">Cumpleañero Like</a>
+                        </div>
+                    </div>
+                    <!-- Menús Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Menús <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="terranorte.html">Terranorte</a>
+                            <a href="caucel.html">Caucel</a>
+                            <a href="dorada.html">Dorada</a>
+                        </div>
+                    </div>
+                    <!-- Blog Link -->
+                    <a href="index.html#blog" class="nav-item">Blog</a>
+                </div>
+            </nav>
         </div>
+    </header>
 
-        <i class="ri-settings-3-line icon-construction"></i>
-
-        <h1>Caucel</h1>
-        <p class="subtitle">Estamos construyendo algo increíble</p>
-
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
+    <!-- Branch Hero Section -->
+    <section id="hero" class="branch-hero">
+        <!-- Slideshow Background -->
+        <div class="hero-slideshow">
+            <div class="slide active"
+                style="background-image: url('assets/fondos/605102615_857792127002373_7475398924201788806_n.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('assets/fondos/607661501_857792130335706_3555240468987206508_n.jpg');">
+            </div>
+            <div class="slide"
+                style="background-image: url('assets/fondos/599941942_850400241074895_2636085479842782943_n.jpg');">
+            </div>
         </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container text-center">
+            <h1 class="hero-title">
+                Like <span class="highlight">Caucel</span>
+            </h1>
+            <p class="hero-subtitle">Vive la experiencia en el poniente de Mérida</p>
+            <div class="hero-btns">
+                <a href="#" class="btn btn-primary">Info</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <i class="ri-arrow-down-line"></i>
+        </div>
+    </section>
 
-        <a href="index.html" class="btn">
-            <i class="ri-arrow-left-line"></i> Volver al Inicio
-        </a>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/529995059134" class="whatsapp-float" target="_blank">
+        <i class="ri-whatsapp-line"></i>
+        <span>Reserva</span>
+    </a>
 
-        <p class="coming-soon">Próximamente disponible</p>
-    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
