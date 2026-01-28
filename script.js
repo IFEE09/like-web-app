@@ -111,11 +111,8 @@ document.addEventListener("click", () => {
   });
 });
 
-// ===== Single Photo Slider Functionality =====
-function initSingleSlider(sliderId) {
-  const slider = document.getElementById(sliderId);
-  if (!slider) return;
-
+// Initialize all branch sliders
+document.querySelectorAll(".branch-single-slider").forEach((slider) => {
   const slides = slider.querySelectorAll(".slide");
   const nextBtn = slider.querySelector(".next");
   const prevBtn = slider.querySelector(".prev");
@@ -124,9 +121,7 @@ function initSingleSlider(sliderId) {
   function showSlide(index) {
     slides.forEach((slide, i) => {
       slide.classList.remove("active");
-      if (i === index) {
-        slide.classList.add("active");
-      }
+      if (i === index) slide.classList.add("active");
     });
   }
 
@@ -145,10 +140,7 @@ function initSingleSlider(sliderId) {
 
   // Auto-advance every 5 seconds
   setInterval(nextSlide, 5000);
-}
-
-// Initialize sliders
-initSingleSlider("branchSingleSlider");
+});
 
 // Image Modal Functionality
 const modal = document.getElementById("imageModal");
@@ -291,5 +283,32 @@ function initReviewsCarousel() {
   }
 }
 
-// Initialize reviews
+// ===== Menu Tabs Functionality =====
+function initMenuTabs() {
+  const menuTabs = document.querySelectorAll(".menu-tab-btn");
+  const menuContents = document.querySelectorAll(".menu-tab-content");
+
+  if (menuTabs.length === 0) return;
+
+  menuTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-tab");
+
+      // Update buttons
+      menuTabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      // Update content with animation
+      menuContents.forEach((content) => {
+        content.classList.remove("active");
+        if (content.id === target) {
+          content.classList.add("active");
+        }
+      });
+    });
+  });
+}
+
+// Initialize all
 initReviewsCarousel();
+initMenuTabs();
