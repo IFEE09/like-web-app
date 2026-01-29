@@ -1574,7 +1574,8 @@ nav {
 
 .sucursales-header {
   margin-bottom: 60px;
-  animation: fadeLeft 1s ease forwards;
+  text-align: center;
+  animation: fadeUp 1s ease forwards;
 }
 
 .sucursales-header h2 {
@@ -1606,15 +1607,26 @@ nav {
 
 .sucursal-card {
   perspective: 1000px;
-  height: 300px;
+  width: 100%;
+  position: relative;
+}
+
+.sucursal-card::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+  /* square */
 }
 
 .card-inner {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
+  transform-origin: center center;
 }
 
 .sucursal-card:hover .card-inner {
@@ -1624,6 +1636,8 @@ nav {
 .card-front,
 .card-back {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -1636,36 +1650,58 @@ nav {
 }
 
 .card-front {
-  background: #e9e9e9;
-  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  transform: rotateY(0deg);
+  z-index: 2;
+}
+
+.card-front-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  border-radius: inherit;
 }
 
 .card-front h3 {
-  color: #000;
+  position: relative;
+  z-index: 2;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 1.3;
+  font-weight: 800;
+  /* Extra bold */
+  font-size: 3.5rem;
+  /* Massive title */
+  line-height: 1.1;
   margin: 0;
-  letter-spacing: 1px;
+  padding: 0 40px;
+  letter-spacing: 3px;
+  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
 }
 
 .card-back {
-  background-size: cover;
-  background-position: center;
+  background: #c80913;
   transform: rotateY(180deg);
-  position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
-.card-back-overlay {
+.card-back-red-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(200, 9, 19, 0.85) 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(200, 9, 19, 1) 0%, rgba(139, 0, 0, 1) 100%);
   z-index: 1;
 }
 
@@ -2267,9 +2303,19 @@ nav {
     gap: 30px;
   }
 
+  .sucursales-section .container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
   .sucursales-grid {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .lineup-gallery {
@@ -2322,12 +2368,14 @@ nav {
   }
 
   .sucursal-card {
-    height: 350px;
+    height: auto;
+    /* Allow aspect-ratio to take over */
   }
 
   .card-front h3,
   .card-back-content h4 {
-    font-size: 2rem;
+    font-size: 3rem;
+    /* Massive but fits better */
   }
 
   /* Experiencias Slider Desktop */
