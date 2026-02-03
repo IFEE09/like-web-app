@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubre por qué LIKE es el mejor lugar de música en vivo en Mérida. Shows todos los días, 3 sucursales y la mejor fiesta.">
+    <title>LIKE: El mejor lugar de música en vivo en Mérida | Blog</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-post-header {
+            padding-top: 150px;
+            padding-bottom: 60px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('assets/blog/blog_1.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        .blog-post-content {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .blog-post-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .blog-post-content ul {
+            margin-bottom: 30px;
+            list-style: none;
+        }
+
+        .blog-post-content ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .blog-post-content ul li i {
+            color: var(--primary-color);
+        }
+
+        .sucursales-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .sucursal-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .sucursal-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-header {
+                padding-top: 100px;
+                padding-bottom: 40px;
+            }
+
+            .blog-post-header h1 {
+                font-size: 2.2rem !important;
+            }
+
+            .blog-post-content {
+                margin: 30px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logolike.png" alt="LIKE Logo" />
+                </a>
+                <!-- Hamburger Menu -->
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-item">Inicio</a>
+                    <!-- Sucursales Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Sucursales <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="terranorte.html">Terranorte</a>
+                            <a href="caucel.html">Caucel</a>
+                            <a href="dorada.html">Dorada</a>
+                        </div>
+                    </div>
+                    <!-- Experiencias Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Experiencias <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="lunes-de-rock.html">Lunes de Rock</a>
+                            <a href="i-love-salsa.html">I Love Salsa</a>
+                            <a href="primera-fila.html">Primera Fila</a>
+                            <a href="cumpleanero-like.html">Cumpleañero Like</a>
+                        </div>
+                    </div>
+                    <a href="index.html#blog" class="nav-item active">Blog</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <header class="blog-post-header">
+            <div class="container">
+                <span class="lineup-tag" style="margin-bottom: 20px; display: inline-block;">EXPERIENCIA LIKE</span>
+                <h1 class="hero-title" style="font-size: 3.5rem;">LIKE: el mejor lugar de <span class="highlight">música
+                        en vivo</span> en Mérida</h1>
+            </div>
+        </header>
+
+        <div class="blog-post-content">
+            <p>Si estás buscando el mejor lugar de música en vivo en Mérida, donde cada noche sea una experiencia
+                diferente, LIKE es tu opción ideal. Con 7 shows distintos durante la semana y presencia en 3 sucursales
+                estratégicas de la ciudad, LIKE se ha convertido en el punto de referencia para quienes buscan música,
+                ambiente y espectáculo en un solo lugar.</p>
+            <p><strong>En LIKE no vienes solo a escuchar música: vienes a vivir un show.</strong></p>
+
+            <h2>Música en vivo todos los días</h2>
+            <p>Una de las principales razones por las que LIKE es considerado uno de los mejores lugares de música en
+                vivo en Mérida es que aquí hay espectáculo todos los días, no solo los fines de semana. Cada noche tiene
+                su propia identidad:</p>
+            <ul>
+                <li><i class="ri-checkbox-circle-fill"></i> Diferentes géneros musicales</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Artistas y bandas en vivo</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Shows temáticos</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Producción de audio e iluminación</li>
+                <li><i class="ri-checkbox-circle-fill"></i> Ambiente real de fiesta</li>
+            </ul>
+
+            <h2>7 shows diferentes que hacen cada noche única</h2>
+            <p>LIKE no repite el mismo concepto noche tras noche. Durante la semana puedes disfrutar de:</p>
+            <ul>
+                <li><i class="ri-music-2-fill"></i> Música latina & Salsa en vivo</li>
+                <li><i class="ri-music-2-fill"></i> Rock en vivo & Tributos</li>
+                <li><i class="ri-music-2-fill"></i> Pop y éxitos clásicos</li>
+                <li><i class="ri-music-2-fill"></i> Noches de baile & Especiales temáticos</li>
+            </ul>
+
+            <h2>Tres sucursales para vivir la experiencia LIKE</h2>
+            <p>Contamos con tres sucursales en distintos puntos de la ciudad, cada una con su propio ambiente:</p>
+
+            <div class="sucursales-list">
+                <div class="sucursal-item">
+                    <h3>📍 Like Terranorte</h3>
+                    <p>Ubicada al norte de la ciudad, ideal para quienes buscan un lugar amplio y cómodo con excelente
+                        ambiente.</p>
+                </div>
+                <div class="sucursal-item">
+                    <h3>📍 Like Caucel</h3>
+                    <p>La opción perfecta para el poniente, con noches llenas de ritmo y baile.</p>
+                </div>
+                <div class="sucursal-item">
+                    <h3>📍 Like Dorada</h3>
+                    <p>Estilo propio con gran producción visual y ambiente festivo.</p>
+                </div>
+            </div>
+
+            <h2>¿Por qué somos el referente de música en vivo?</h2>
+            <p>LIKE se diferencia por su enfoque total en el espectáculo. No es solo un bar, es un concepto de
+                entretenimiento completo con bandas y cantantes en vivo y producción de nivel concierto.</p>
+
+            <p>Ideal para celebrar cumpleaños, salir con amigos o vivir una cita diferente. Si buscas un lugar donde
+                siempre pase algo, LIKE es ese lugar.</p>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="https://wa.me/529995059134" target="_blank" class="btn btn-primary">Reserva tu mesa ahora</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <img src="assets/logo/logolike.png" alt="LIKE Logo" style="height: 60px" />
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/likebar_oficial/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/likebar.official" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/529995059134" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 LIKE Espacio Gastronómico. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
