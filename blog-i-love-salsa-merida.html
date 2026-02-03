@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="I Love Salsa en LIKE - Descubre la noche de salsa más grande de Mérida con 15 músicos en vivo. Miércoles y jueves.">
+    <title>I Love Salsa en LIKE: La noche de salsa más grande de Mérida | Blog</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;600&family=Montserrat:wght@700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-post-header {
+            padding-top: 180px;
+            padding-bottom: 80px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url('assets/blog/blog_2.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .blog-post-content {
+            max-width: 850px;
+            margin: 80px auto;
+            padding: 0 30px;
+            line-height: 1.9;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.15rem;
+        }
+
+        .blog-post-content h2 {
+            margin-top: 60px;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 20px;
+        }
+
+        .blog-post-content p {
+            margin-bottom: 25px;
+        }
+
+        .blog-post-content ul {
+            margin-bottom: 40px;
+            padding-left: 10px;
+            list-style: none;
+        }
+
+        .blog-post-content ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .blog-post-content ul li i {
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+
+        .sucursales-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+
+        .sucursal-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .sucursal-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .sucursal-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 46, 76, 0.1), rgba(255, 46, 76, 0.02));
+            border-radius: 20px;
+            padding: 40px;
+            margin: 50px 0;
+            border: 1px solid rgba(255, 46, 76, 0.2);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post-header {
+                padding-top: 140px;
+                padding-bottom: 60px;
+            }
+
+            .blog-post-header h1 {
+                font-size: 2.5rem !important;
+                line-height: 1.2;
+            }
+
+            .blog-post-content {
+                margin: 40px auto;
+                font-size: 1.05rem;
+            }
+
+            .blog-post-content h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="assets/logo/logolike.png" alt="LIKE Logo" />
+                </a>
+                <!-- Hamburger Menu -->
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-links" id="navLinks">
+                    <a href="index.html" class="nav-item">Inicio</a>
+                    <!-- Sucursales Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Sucursales <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="terranorte.html">Terranorte</a>
+                            <a href="caucel.html">Caucel</a>
+                            <a href="dorada.html">Dorada</a>
+                        </div>
+                    </div>
+                    <!-- Experiencias Dropdown -->
+                    <div class="dropdown-container">
+                        <button class="nav-item dropdown-toggle">
+                            Experiencias <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="lunes-de-rock.html">Lunes de Rock</a>
+                            <a href="i-love-salsa.html">I Love Salsa</a>
+                            <a href="primera-fila.html">Primera Fila</a>
+                            <a href="cumpleanero-like.html">Cumpleañero Like</a>
+                        </div>
+                    </div>
+                    <a href="index.html#blog" class="nav-item active">Blog</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <article>
+        <header class="blog-post-header">
+            <div class="container" style="max-width: 900px;">
+                <span class="lineup-tag">NOCHES DE SALSA</span>
+                <h1 class="hero-title" style="font-size: 3rem; line-height: 1.2; margin-top: 10px;">I Love Salsa en
+                    LIKE: la noche de salsa<br><span class="highlight">más grande de Mérida</span></h1>
+            </div>
+        </header>
+
+        <div class="blog-post-content">
+            <p>Si estás buscando dónde bailar salsa en Mérida con música en vivo, ambiente espectacular y una
+                experiencia que se sienta como un concierto, <strong>I Love Salsa en LIKE</strong> es tu lugar. Cada
+                semana, LIKE se transforma en el punto de encuentro para los amantes de la salsa con un show único que
+                ha cambiado las noches de la ciudad.</p>
+
+            <div class="sucursales-list">
+                <div class="sucursal-item">
+                    <h3>📍 Miércoles</h3>
+                    <p>En <strong>Like Terranorte</strong>: El lugar donde todo comenzó, al norte de la ciudad.</p>
+                </div>
+                <div class="sucursal-item">
+                    <h3>📍 Jueves</h3>
+                    <p>En <strong>Like Caucel</strong>: Toda la energía del show llega al poniente de Mérida.</p>
+                </div>
+            </div>
+
+            <h2>🎺 Un show de salsa único en Mérida</h2>
+            <p>I Love Salsa no es solo una noche para bailar, es un espectáculo musical completo. En el escenario se
+                presentan <strong>15 músicos y cantantes en vivo</strong>, creando una experiencia poderosa, vibrante y
+                totalmente diferente a escuchar música grabada.</p>
+
+            <p>La banda interpreta los grandes clásicos de la salsa y temas modernos que te hacen bailar desde el primer
+                minuto:</p>
+            <ul>
+                <li><i class="ri-check-line"></i> <strong>Salsa romántica</strong>: Para los que disfrutan cantar letra
+                    por letra.</li>
+                <li><i class="ri-check-line"></i> <strong>Salsa clásica</strong>: De los grandes maestros del género.
+                </li>
+                <li><i class="ri-check-line"></i> <strong>Salsa para bailar</strong>: Ritmos rápidos que no te permiten
+                    quedar sentado.</li>
+                <li><i class="ri-check-line"></i> <strong>Producción total</strong>: Coros, metales y percusiones en
+                    vivo.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3
+                    style="color: var(--primary-color); margin-bottom: 15px; font-family: 'Playfair Display', serif; font-size: 1.8rem;">
+                    Ritmo, energía y fiesta garantizada</h3>
+                <p>Es un show que se siente, se canta y se baila con una energía que solo LIKE puede ofrecer.</p>
+            </div>
+
+            <p>Si buscas un lugar donde la música en vivo sea protagonista y la pista de baile nunca esté vacía, I Love
+                Salsa es tu mejor opción en Mérida.</p>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="https://wa.me/529995059134" target="_blank" class="btn btn-primary">Reserva aquí tu mesa</a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <img src="assets/logo/logolike.png" alt="LIKE Logo" style="height: 60px" />
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/likebar_oficial/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://web.facebook.com/likebar.official" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/529995059134" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">
+                &copy; 2026 LIKE Espacio Gastronómico. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
