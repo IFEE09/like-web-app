@@ -1684,132 +1684,145 @@ nav {
 }
 
 
-.sucursal-card {
-  perspective: 1000px;
-  width: 100%;
+.sucursal-card-new {
   position: relative;
-}
-
-.sucursal-card::before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-  /* square */
-}
-
-.card-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d;
-  transform-origin: center center;
-}
-
-.sucursal-card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.card-front {
+.sucursal-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  transform: rotateY(0deg);
-  z-index: 2;
-}
-
-.card-front-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 1;
-  border-radius: inherit;
-}
-
-.card-front h3 {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  /* Extra bold */
-  font-size: 3.5rem;
-  /* Massive title */
-  line-height: 1.1;
-  margin: 0;
-  padding: 0 40px;
-  letter-spacing: 3px;
-  text-shadow: 0 5px 20px rgba(0, 0, 0, 0.8);
-  text-transform: uppercase;
-}
-
-.card-back {
-  background: #c80913;
-  transform: rotateY(180deg);
-  overflow: hidden;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
 
-.card-back-red-overlay {
+.sucursal-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(200, 9, 19, 1) 0%, rgba(139, 0, 0, 1) 100%);
-  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+  transition: background 0.4s ease;
 }
 
-.card-back-content {
+.sucursal-content {
   position: relative;
-  z-index: 2;
-  color: #ffffff;
+  z-index: 3;
+  text-align: center;
   padding: 30px;
+  width: 100%;
 }
 
-.card-back-content p {
-  font-size: 0.9rem;
-  margin-bottom: 10px;
+.sucursal-tag {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0.9;
+  margin-bottom: 15px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
 }
 
-.card-back-content h4 {
+.sucursal-card-new h3 {
+  color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease;
 }
 
-.card-back-content .btn {
-  margin-top: 10px;
-  font-size: 0.85rem;
-  padding: 10px 25px;
+.sucursal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease 0.1s;
+}
+
+/* Hover Effects with Pulsar */
+.sucursal-card-new:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(199, 9, 19, 0.3);
+}
+
+.sucursal-card-new:hover .sucursal-bg {
+  transform: scale(1.1);
+}
+
+.sucursal-card-new:hover .sucursal-overlay {
+  background: linear-gradient(to bottom, rgba(199, 9, 19, 0.2), rgba(0, 0, 0, 0.9));
+}
+
+.sucursal-card-new:hover h3 {
+  transform: translateY(-10px);
+}
+
+.sucursal-card-new:hover .sucursal-tag,
+.sucursal-card-new:hover .sucursal-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pulsar Effect */
+.sucursal-card-new::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+  border: 2px solid var(--primary-color);
+  opacity: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.sucursal-card-new:hover::after {
+  animation: sucursal-pulse 2s infinite;
+}
+
+@keyframes sucursal-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.08);
+    opacity: 0;
+  }
 }
 
 
@@ -2452,15 +2465,12 @@ nav {
     padding: 18px 40px;
   }
 
-  .sucursal-card {
+  .sucursal-card-new {
     height: auto;
-    /* Allow aspect-ratio to take over */
   }
 
-  .card-front h3,
-  .card-back-content h4 {
-    font-size: 3rem;
-    /* Massive but fits better */
+  .sucursal-card-new h3 {
+    font-size: 2.5rem;
   }
 
   /* Experiencias Slider Desktop */
