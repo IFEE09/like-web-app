@@ -1186,6 +1186,39 @@ nav {
   white-space: nowrap;
 }
 
+.menu-item-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.menu-item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.menu-item-list li:last-child {
+  border-bottom: none;
+}
+
+.menu-item-list li:hover {
+  color: #fff;
+  padding-left: 5px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.menu-item-list li span:first-child {
+  flex: 1;
+  padding-right: 15px;
+}
+
 .menu-note {
   font-size: 0.75rem;
   color: var(--primary-color);

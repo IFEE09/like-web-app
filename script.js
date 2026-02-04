@@ -309,6 +309,61 @@ function initMenuTabs() {
   });
 }
 
+// ===== Price Highlighting =====
+function highlightPrices() {
+  const menuSections = document.querySelectorAll('.menu-tab-content');
+  menuSections.forEach(section => {
+    const walk = document.createTreeWalker(section, NodeFilter.SHOW_TEXT, null, false);
+    let node;
+    const textNodes = [];
+
+    while (node = walk.nextNode()) {
+      if (node.nodeValue.includes('$')) {
+        let parent = node.parentElement;
+        let alreadyHighlighted = false;
+        while (parent && parent !== section) {
+          if (parent.classList.contains('menu-item-price')) {
+            alreadyHighlighted = true;
+            break;
+          }
+          parent = parent.parentElement;
+        }
+        if (!alreadyHighlighted) {
+          textNodes.push(node);
+        }
+      }
+    }
+
+    textNodes.forEach(node => {
+      const content = node.nodeValue;
+      // Regex that matches prices, including surrounding parentheses or slashes
+      const regex = /([\(\/]?\$[0-9,]+(\.[0-9]{2})?[\)\/]?)/g;
+
+      const fragment = document.createDocumentFragment();
+      let lastIndex = 0;
+      let match;
+
+      while ((match = regex.exec(content)) !== null) {
+        fragment.appendChild(document.createTextNode(content.substring(lastIndex, match.index)));
+
+        const priceSpan = document.createElement('span');
+        priceSpan.className = 'menu-item-price';
+        priceSpan.textContent = match[0];
+        fragment.appendChild(priceSpan);
+
+        lastIndex = regex.lastIndex;
+      }
+
+      fragment.appendChild(document.createTextNode(content.substring(lastIndex)));
+
+      if (node.parentNode) {
+        node.parentNode.replaceChild(fragment, node);
+      }
+    });
+  });
+}
+
 // Initialize all
+highlightPrices();
 initReviewsCarousel();
 initMenuTabs();
