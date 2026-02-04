@@ -761,13 +761,20 @@ nav {
 }
 
 /* Branch Specific Photo Sliders */
-/* Branch Info & Split Slider */
+/* Branch Info & Split Slider - Mobile First */
 .branch-info-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 40px;
   align-items: center;
   margin-top: 40px;
+}
+
+@media (min-width: 993px) {
+  .branch-info-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 .info-text {
@@ -789,11 +796,23 @@ nav {
 .branch-single-slider {
   position: relative;
   width: 100%;
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
+  /* Square for mobile */
+  max-width: 500px;
+  margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 769px) {
+  .branch-single-slider {
+    aspect-ratio: 4/5;
+    /* Taller for desktop */
+    max-width: none;
+    margin: 0;
+  }
 }
 
 .branch-single-slider .slide {
@@ -873,29 +892,16 @@ nav {
   font-size: 1.2rem;
 }
 
-@media (max-width: 992px) {
-  .branch-info-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
 
+/* Adjust order on desktop */
+@media (min-width: 993px) {
   .info-text {
-    text-align: center;
-    order: 2;
-  }
-
-  .info-text .section-description {
-    text-align: center;
-  }
-
-  .info-slider-container {
+    text-align: left;
     order: 1;
   }
 
-  .branch-single-slider {
-    aspect-ratio: 1/1;
-    max-width: 500px;
-    margin: 0 auto;
+  .info-slider-container {
+    order: 2;
   }
 }
 
@@ -1012,22 +1018,37 @@ nav {
 .menu-tabs {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 60px;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  padding: 0 10px;
 }
 
 .menu-tab-btn {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
-  padding: 12px 35px;
+  padding: 10px 20px;
   border-radius: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 0.85rem;
   letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 769px) {
+  .menu-tabs {
+    gap: 15px;
+    margin-bottom: 60px;
+  }
+
+  .menu-tab-btn {
+    padding: 12px 35px;
+    font-size: 1rem;
+  }
 }
 
 .menu-tab-btn:hover {
@@ -1064,16 +1085,29 @@ nav {
 
 .menu-category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+@media (min-width: 769px) {
+  .menu-category-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+  }
 }
 
 .menu-category {
   background: rgba(255, 255, 255, 0.02);
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease;
+}
+
+@media (min-width: 769px) {
+  .menu-category {
+    padding: 30px;
+  }
 }
 
 .menu-category:hover {
@@ -1146,20 +1180,6 @@ nav {
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-  .menu-tabs {
-    flex-wrap: wrap;
-  }
-
-  .menu-tab-btn {
-    padding: 10px 25px;
-    font-size: 0.8rem;
-  }
-
-  .menu-category {
-    padding: 20px;
-  }
-}
 
 /* Map Section */
 .map-section {
@@ -1346,23 +1366,42 @@ nav {
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 120%;
-  left: 50%;
-  transform: translateX(-50%) translateY(10px);
-  background: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.8) 100%);
-  backdrop-filter: blur(10px);
-  padding: 15px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: none;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: none;
   display: none;
   flex-direction: column;
-  gap: 10px;
-  min-width: 160px;
+  gap: 5px;
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto 0;
   z-index: 1000;
+}
+
+@media (min-width: 769px) {
+  .dropdown-menu {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: linear-gradient(180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.8) 100%);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: max-content;
+    max-width: none;
+    margin: 0;
+  }
 }
 
 /* Dropdown Styling - Mobile */
