@@ -1,4 +1,4 @@
-# 🎵 LIKE - Espacio Gastronómico
+# 🎵 LIKE - Feel The Music
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 
 ## 🌟 Descripción
 
-**LIKE** es un espacio gastronómico único que fusiona la mejor gastronomía, música en vivo y un ambiente inolvidable. Este repositorio contiene el landing page oficial con un diseño moderno, responsivo y visualmente impactante.
+**LIKE** es un Feel The Music único que fusiona la mejor gastronomía, música en vivo y un ambiente inolvidable. Este repositorio contiene el landing page oficial con un diseño moderno, responsivo y visualmente impactante.
 
 ## 🏢 Sucursales
 
@@ -108,7 +108,7 @@ npx serve
 
 ## 📄 Licencia
 
-© 2026 LIKE Espacio Gastronómico. Todos los derechos reservados.
+© 2026 LIKE Feel The Music. Todos los derechos reservados.
 
 ---
 
