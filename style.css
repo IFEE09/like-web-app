@@ -288,11 +288,7 @@ nav {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .branch-hero {
-    height: 80vh !important;
-  }
-}
+@media (max-width: 768px) {}
 
 /* Hero Slideshow */
 .hero-slideshow {
@@ -356,12 +352,6 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
-}
-
-@media (min-width: 769px) {
-  .branch-hero .hero-slideshow .slide::after {
-    background-size: contain;
-  }
 }
 
 .hero-overlay {
