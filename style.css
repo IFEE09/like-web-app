@@ -2734,3 +2734,85 @@ h2.sucursales-title-square {
     max-width: none;
   }
 }
+/* Experiencias Like Intro Styles */
+.experiencias-intro-container {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  padding: 0 15px;
+}
+
+.experiencias-glass-box {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.experiencias-glass-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.intro-emotional {
+  font-size: 1.2rem;
+  color: #dc2626;
+  font-style: italic;
+  margin-bottom: 25px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.intro-main-text {
+  font-size: 1rem;
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+.intro-main-text p {
+  margin-bottom: 15px;
+}
+
+.intro-main-text p:last-child {
+  margin-bottom: 0;
+}
+
+.intro-highlight-music {
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.intro-highlight-red {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.intro-bold-white {
+  font-weight: 500;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .experiencias-glass-box {
+    padding: 30px 20px;
+  }
+  
+  .intro-emotional {
+    font-size: 1.1rem;
+  }
+  
+  .intro-main-text {
+    font-size: 0.95rem;
+  }
+
+  .intro-highlight-music {
+    font-size: 1rem;
+  }
+}
