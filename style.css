@@ -1183,9 +1183,9 @@ nav {
 .menu-item-price {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  color: var(--primary-color);
+  color: #ffffff !important;
   font-size: 1rem;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .menu-item-list {
@@ -1204,6 +1204,12 @@ nav {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
+}
+
+.menu-item-list li span:last-child {
+  color: #ffffff !important;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu-item-list li:last-child {
@@ -2734,6 +2740,7 @@ h2.sucursales-title-square {
     max-width: none;
   }
 }
+
 /* Experiencias Like Intro Styles */
 .experiencias-intro-container {
   max-width: 700px;
@@ -2803,11 +2810,11 @@ h2.sucursales-title-square {
   .experiencias-glass-box {
     padding: 30px 20px;
   }
-  
+
   .intro-emotional {
     font-size: 1.1rem;
   }
-  
+
   .intro-main-text {
     font-size: 0.95rem;
   }
