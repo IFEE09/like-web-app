@@ -688,7 +688,7 @@ nav {
       rgba(30, 30, 36, 0.92) 0%,
       rgba(47, 53, 66, 0.88) 50%,
       rgba(30, 30, 36, 0.92) 100%),
-    url("assets/fondos_605898416_855528413895411_3351588006727060302_n.jpg");
+    url("fondos_605898416_855528413895411_3351588006727060302_n.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1742,7 +1742,7 @@ nav {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url('assets/fondos_605682178_853549650759954_8997846778236270796_n.jpg');
+  background-image: url('fondos_605682178_853549650759954_8997846778236270796_n.jpg');
 }
 
 .sucursales-overlay {
