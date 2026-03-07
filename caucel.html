@@ -158,7 +158,11 @@
                 <button class="menu-tab-btn" data-tab="flatbread">Flatbread</button>
                 <button class="menu-tab-btn" data-tab="tacos">Tacos</button>
                 <button class="menu-tab-btn" data-tab="postres">Postres</button>
-                <button class="menu-tab-btn" data-tab="bebidas">Bebidas</button>
+                <button class="menu-tab-btn" data-tab="mixologia">Mixología</button>
+                <button class="menu-tab-btn" data-tab="cervezas">Cervezas</button>
+                <button class="menu-tab-btn" data-tab="destilados">Destilados</button>
+                <button class="menu-tab-btn" data-tab="vinos">Vinos</button>
+                <button class="menu-tab-btn" data-tab="sin-alcohol">Sin Alcohol</button>
             </div>
 
             <!-- ============ ENTRADAS ============ -->
@@ -584,13 +588,298 @@
                 </div>
             </div>
 
-            <!-- ============ BEBIDAS ============ -->
-            <div class="menu-tab-content" id="bebidas">
+<!-- ============ MIXOLOGÍA & COCTELES ============ -->
+            <div class="menu-tab-content" id="mixologia">
                 <div class="menu-category-grid">
-                    <div class="menu-category" style="text-align: center; grid-column: 1 / -1;">
-                        <h3 style="justify-content: center;"><i class="fas fa-cocktail"></i> Próximamente</h3>
-                        <p style="color: rgba(255,255,255,0.5); font-size: 1.1rem;">El menú de bebidas estará disponible
-                            pronto.</p>
+                    <div class="menu-category" style="grid-column: 1 / -1;">
+                        <h3><i class="fas fa-glass-martini-alt"></i> Mixología de la Casa</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Rojo Like</strong><br>Ginebra, frambuesa, jugo de limón, agua tónica y cardamomo.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Mi Rey</strong><br>Mezcal, Ancho Reyes, jugo de limón, pepino, jarabe natural, ginger ale y sal de tortilla tatemada.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Black Tiki</strong><br>Ginebra, jugo de limón, jugo de piña, jarabe de jengibre, carbón activado y agua tónica.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Mezcal Mule</strong><br>Mezcal, jugo de limón, jarabe de jengibre, ginger ale, cerveza de jengibre hecha en casa y cardamomo.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Mezcalita Maracuyá</strong><br>Mezcal, Ancho Reyes Rojo, jugo de limón, pepino y sal de chapulines.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Cantarindo</strong><br>Tequila, jugo de limón, jugo de naranja, jarabe de tamarindo, jugo de piña, sprite y chile.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Malbicho</strong><br>Mezcal, licor de chile ancho, jugo de limón, puré de piña con chipotle, hierbabuena y ginger ale.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Azul & Blues</strong><br>Vodka, curacao azul, jugo de limón, pepino, crema de coco y sprite.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Mambo Like</strong><br>Tequila reposado, Controy, jugo de naranja, toronja y limón, refresco de toronja y chile piquín.</p></div><div class="menu-item-price">$165</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Carajillo</strong><br>Licor 43 y café espresso.</p></div><div class="menu-item-price">$180</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Carajillo Beso</strong><br>Baileys, Licor 43 y café espresso.</p></div><div class="menu-item-price">$180</div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3><i class="fas fa-cocktail"></i> Cocteles</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Aperol Spritz</strong><br>Aperol, Cinzano Prosecco, agua mineralizada.</p></div><div class="menu-item-price">$180</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Piña Colada</strong><br>Ron, crema de coco, jugo de piña.</p></div><div class="menu-item-price">$125</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Daiquirí</strong><br>(Fresa, limón, mango o tamarindo). Ron, jugo de limón y jarabe natural.</p></div><div class="menu-item-price">$125</div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3><i class="fas fa-bolt"></i> Shots de la Casa</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Cry Baby</strong><br>Mezcal, maracuyá, chamoy y jugo de limón. Escarchado con sal de chapulín.</p></div><div class="menu-item-price">$85</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>El Fresa</strong><br>Vodka, fresa, jugo de limón y chamoy.</p></div><div class="menu-item-price">$85</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Baby Mango</strong><br>Vodka, jugo de limón, mango y chamoy.</p></div><div class="menu-item-price">$85</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Mick Jagger</strong><br>Hpnotiq y Jagermeister.</p></div><div class="menu-item-price">$120</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Rockstar</strong><br>Jack Daniels y Amaretto.</p></div><div class="menu-item-price">$100</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============ CERVEZAS ============ -->
+            <div class="menu-tab-content" id="cervezas">
+                <div class="menu-category-grid">
+                    <div class="menu-category" style="grid-column: 1 / -1;">
+                        <h3><i class="fas fa-beer"></i> Paquetes Para Grupos</h3>
+                        <div class="menu-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Cubetazo de 6 (Nacional)</strong></p></div><div class="menu-item-price">$330</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Cubetazo de 6 (Premium)</strong></p></div><div class="menu-item-price">$360</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Cubetazo de 12 (Nacional)</strong></p></div><div class="menu-item-price">$655</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Mega Cubo de 24 (Nacional)</strong></p></div><div class="menu-item-price">$1,200</div></div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-beer"></i> Cerveza Nacional</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <p>Tecate Light, Indio, XX Lager, XX Ambar, Tecate Roja.</p>
+                                </div>
+                                <div class="menu-item-price">$60</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-beer"></i> Cerveza Premium</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <p>Heineken, Bohemia Clara, Bohemia Oscura, Amstel Ultra, XX Ultra.</p>
+                                </div>
+                                <div class="menu-item-price">$65</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-ban"></i> Sin Alcohol</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Heineken 0.0</strong></p></div><div class="menu-item-price">$65</div></div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-mortar-pestle"></i> Para Mezclar</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <p>Ojo Rojo, Chelada, Michelada, Michelada de Sabor, Bandera.</p>
+                                </div>
+                                <div class="menu-item-price">$35</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category" style="grid-column: 1 / -1;">
+                        <h3><i class="fas fa-glass-whiskey"></i> Michelike</h3>
+                        <div class="menu-items" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michelike Chelada</strong></p></div><div class="menu-item-price">$75</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michelike Clásica</strong></p></div><div class="menu-item-price">$75</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michelike Fresa</strong></p></div><div class="menu-item-price">$75</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michelike Mangollada</strong></p></div><div class="menu-item-price">$75</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michelike Ojo Rojo</strong></p></div><div class="menu-item-price">$75</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michelike Tamarindo</strong></p></div><div class="menu-item-price">$75</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============ DESTILADOS ============ -->
+            <div class="menu-tab-content" id="destilados">
+                <div class="menu-category-grid">
+                    
+                    <div class="menu-category" style="grid-column: 1 / -1;">
+                        <h4 style="color: rgba(255,255,255,0.5); text-align: center; margin-bottom: 20px;">Servicio por Copa o Botella</h4>
+                    </div>
+
+                    <!-- VODKA -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-bottle"></i> Vodka</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Smirnoff</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$90</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Smirnoff Tamarindo</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$90</span></li><li><span>Botella</span> <span>$1,350</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Absolut Azul</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$95</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Stolichnaya</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$110</span></li><li><span>Botella</span> <span>$1,550</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Grey Goose</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$160</span></li><li><span>Botella</span> <span>$2,400</span></li></ul></div></div>
+                        </div>
+                    </div>
+
+                    <!-- WHISKY -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-bottle"></i> Whisky</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Johnnie Walker Blue</strong></p><ul class="menu-item-list"><li><span>Botella</span> <span>$14,100</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Johnnie Walker Gold</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$220</span></li><li><span>Botella</span> <span>$3,600</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Johnnie Walker Green</strong></p><ul class="menu-item-list"><li><span>Botella</span> <span>$4,800</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Johnnie Walker Black</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$170</span></li><li><span>Botella</span> <span>$2,900</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Johnnie Walker Dbl Black</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$185</span></li><li><span>Botella</span> <span>$3,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Johnnie Walker Red</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$1,450</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Buchanan's 12</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$165</span></li><li><span>Botella</span> <span>$2,750</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Buchanan's Master</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$175</span></li><li><span>Botella</span> <span>$3,200</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Buchanan's 18</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$265</span></li><li><span>Botella</span> <span>$4,900</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Macallan 12</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$250</span></li><li><span>Botella</span> <span>$4,150</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Macallan 15</strong></p><ul class="menu-item-list"><li><span>Botella</span> <span>$6,600</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Glenfiddich</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$165</span></li><li><span>Botella</span> <span>$3,050</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Chivas Regal 12</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$160</span></li><li><span>Botella</span> <span>$2,400</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Jack Daniel's</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$125</span></li><li><span>Botella</span> <span>$1,750</span></li></ul></div></div>
+                        </div>
+                    </div>
+
+                    <!-- RON -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-bottle"></i> Ron</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Captain Morgan</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$95</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Zacapa 23</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$165</span></li><li><span>Botella</span> <span>$3,200</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Matusalem Clásico</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$1,450</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Matusalem 18</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$125</span></li><li><span>Botella</span> <span>$2,150</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Matusalem 23</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$180</span></li><li><span>Botella</span> <span>$3,300</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Havana 3</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$110</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Havana 7</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$120</span></li><li><span>Botella</span> <span>$1,750</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Bacardi Blanco</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$95</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Bacardi Añejo</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$95</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Bacardi Reserva 8</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$120</span></li><li><span>Botella</span> <span>$1,450</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Appleton State</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$110</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Flor de Caña 4 Extra Dry</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$89</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Flor de Caña 7</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$110</span></li><li><span>Botella</span> <span>$1,600</span></li></ul></div></div>
+                        </div>
+                    </div>
+
+                    <!-- MEZCAL y TEQUILA -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-bottle"></i> Mezcal</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>400 Conejos</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$115</span></li><li><span>Botella</span> <span>$1,850</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Unión Joven</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$120</span></li><li><span>Botella</span> <span>$2,100</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Unión Viejo</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$140</span></li><li><span>Botella</span> <span>$2,350</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Ojo de Tigre</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$129</span></li><li><span>Botella</span> <span>$1,800</span></li></ul></div></div>
+                        </div>
+                        
+                        <h3 style="margin-top: 30px;"><i class="fas fa-wine-bottle"></i> Tequila</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Don Julio Reposado</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$139</span></li><li><span>Botella</span> <span>$2,300</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Don Julio Blanco</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$125</span></li><li><span>Botella</span> <span>$2,200</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Don Julio 70</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$160</span></li><li><span>Botella</span> <span>$2,950</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Herradura Reposado</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$125</span></li><li><span>Botella</span> <span>$2,100</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Cazadores Reposado</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$110</span></li><li><span>Botella</span> <span>$1,250</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>José Cuervo Tradicional</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$1,450</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Jimador Reposado</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$95</span></li><li><span>Botella</span> <span>$1,450</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Maestro Dobel Diamante</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$140</span></li><li><span>Botella</span> <span>$2,550</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>1800 Cristalino</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$140</span></li><li><span>Botella</span> <span>$2,600</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Don Ramón Punta Diamante</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$89</span></li><li><span>Botella</span> <span>$1,200</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Don Ramón Platinum Plata</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$129</span></li><li><span>Botella</span> <span>$2,100</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Gran Malo Tamarindo</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$95</span></li><li><span>Botella</span> <span>$1,200</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Magnum Dobel Diamante 3L</strong></p><ul class="menu-item-list"><li><span>Botella</span> <span>$9,000</span></li></ul></div></div>
+                        </div>
+                    </div>
+
+                    <!-- GINEBRA, BRANDY, LICORES -->
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-bottle"></i> Ginebra</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Hendrick's</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$155</span></li><li><span>Botella</span> <span>$2,900</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Tanqueray</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$125</span></li><li><span>Botella</span> <span>$2,000</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Bombay Sapphire</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$125</span></li><li><span>Botella</span> <span>$1,900</span></li></ul></div></div>
+                        </div>
+
+                        <h3 style="margin-top: 30px;"><i class="fas fa-wine-bottle"></i> Brandy</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Torres 10</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$99</span></li><li><span>Botella</span> <span>$1,400</span></li></ul></div></div>
+                        </div>
+
+                        <h3 style="margin-top: 30px;"><i class="fas fa-wine-bottle"></i> Licores</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Licor 43</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$1,800</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Baileys</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$110</span></li><li><span>Botella</span> <span>$1,380</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Hpnotiq</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$150</span></li><li><span>Botella</span> <span>$2,600</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Jägermeister</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$120</span></li><li><span>Botella</span> <span>$1,750</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Amaretto Disaronno</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$99</span></li></ul></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============ VINOS Y CHAMPAGNE ============ -->
+            <div class="menu-tab-content" id="vinos">
+                <div class="menu-category-grid">
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-glass"></i> Vinos</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Casa Madero 3v</strong></p><ul class="menu-item-list"><li><span>Botella</span> <span>$1,350</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Rosado Sutter Home</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$850</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michel Torino Malbec</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$850</span></li></ul></div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Michel Torino Cabernet Sauvignon</strong></p><ul class="menu-item-list"><li><span>Copa</span> <span>$105</span></li><li><span>Botella</span> <span>$850</span></li></ul></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3><i class="fas fa-wine-glass-alt"></i> Champagne</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Moët Chandon Brut Imperial</strong></p></div><div class="menu-item-price">$3,500</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Moët Chandon Ice Imperial</strong></p></div><div class="menu-item-price">$4,300</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Moët Chandon Rosé Imperial</strong></p></div><div class="menu-item-price">$4,100</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Moët Chandon Néctar Imperial</strong></p></div><div class="menu-item-price">$3,600</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ============ SIN ALCOHOL ============ -->
+            <div class="menu-tab-content" id="sin-alcohol">
+                <div class="menu-category-grid">
+                    <div class="menu-category">
+                        <h3><i class="fas fa-cocktail"></i> Mocktails (Sin Alcohol)</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Red Temple</strong><br>Puré natural de frutos rojos, jugo de limón, jarabe natural, cardamomo y sprite.</p></div><div class="menu-item-price">$90</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Amazonas</strong><br>Maracuyá, jugo de limón, ginger ale, sal de chapulin y lima limón.</p></div><div class="menu-item-price">$90</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Bora Bora</strong><br>Pepino, jugo de limón, jarabe de jengibre, jugo de piña y sprite.</p></div><div class="menu-item-price">$90</div></div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-glass-whiskey"></i> Refrescos y Aguas</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Familia Coca-Cola</strong><br><small>(Coca-Cola, Toronja, Mundet, Sprite, Agua Mineral, Agua Purificada).</small></p></div><div class="menu-item-price">$50</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Agua Quina Schweppes</strong></p></div><div class="menu-item-price">$50</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Ginger Ale Schweppes</strong></p></div><div class="menu-item-price">$50</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Topo Chico</strong></p></div><div class="menu-item-price">$85</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Perrier</strong></p></div><div class="menu-item-price">$85</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Agua Fiji</strong></p></div><div class="menu-item-price">$115</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Jugos</strong><br><small>(Té, arándano, limonada mineral, naranjada, naranjada mineral, horchata, tomate, mango, manzana, toronja y limonada de fresa).</small></p></div><div class="menu-item-price">$70</div></div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-coffee"></i> Cafés</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Capuccino</strong></p></div><div class="menu-item-price">$60</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Americano</strong></p></div><div class="menu-item-price">$45</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Espresso</strong></p></div><div class="menu-item-price">$45</div></div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category">
+                        <h3><i class="fas fa-bolt"></i> Energéticos</h3>
+                        <div class="menu-items">
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Boost</strong></p></div><div class="menu-item-price">$70</div></div>
+                            <div class="menu-item"><div class="menu-item-info"><p><strong>Red Bull</strong></p></div><div class="menu-item-price">$85</div></div>
+                        </div>
                     </div>
                 </div>
             </div>
