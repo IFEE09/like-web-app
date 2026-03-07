@@ -363,7 +363,35 @@ function highlightPrices() {
   });
 }
 
+// ===== Scroll Spy for Menu Section =====
+function initMenuScrollSpy() {
+  const menuSection = document.getElementById("menu");
+  if (!menuSection) return;
+
+  const observerOptions = {
+    threshold: 0.2 // Trigger when 20% of the section is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Update URL hash without jumping
+        history.replaceState(null, null, "#menu");
+      } else {
+        // Optional: clear hash when leaving the section
+        // Only if we were previously in the menu hash
+        if (window.location.hash === "#menu") {
+          history.replaceState(null, null, window.location.pathname);
+        }
+      }
+    });
+  }, observerOptions);
+
+  observer.observe(menuSection);
+}
+
 // Initialize all
 highlightPrices();
 initReviewsCarousel();
 initMenuTabs();
+initMenuScrollSpy();
