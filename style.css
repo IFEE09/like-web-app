@@ -1293,12 +1293,11 @@ nav {
   color: #fff !important;
   font-size: 1.05rem;
   white-space: nowrap;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
   background: var(--primary-color);
   padding: 5px 14px;
   border-radius: 6px;
-  box-shadow: 0 0 12px rgba(200, 9, 19, 0.5), 0 0 25px rgba(200, 9, 19, 0.2);
-  border: 1px solid rgba(255, 80, 80, 0.4);
+  box-shadow: 0 0 15px rgba(200, 9, 19, 0.5);
+  border: none;
 }
 
 .menu-item-list {
@@ -1325,12 +1324,11 @@ nav {
   color: #fff !important;
   font-size: 0.95rem;
   white-space: nowrap;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
   background: var(--primary-color);
   padding: 4px 12px;
   border-radius: 6px;
-  box-shadow: 0 0 12px rgba(200, 9, 19, 0.5), 0 0 25px rgba(200, 9, 19, 0.2);
-  border: 1px solid rgba(255, 80, 80, 0.4);
+  box-shadow: 0 0 15px rgba(200, 9, 19, 0.5);
+  border: none;
 }
 
 .menu-item-list li:last-child {
