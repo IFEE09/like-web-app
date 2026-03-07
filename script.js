@@ -369,7 +369,8 @@ function initMenuScrollSpy() {
   if (!menuSection) return;
 
   const observerOptions = {
-    threshold: 0.2 // Trigger when 20% of the section is visible
+    threshold: 0.05, // Trigger as soon as the very top enters (5%)
+    rootMargin: "0px 0px -90% 0px" // Focus on the top of the viewport
   };
 
   const observer = new IntersectionObserver((entries) => {
