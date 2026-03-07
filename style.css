@@ -1311,23 +1311,24 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 8px;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.8);
   transition: all 0.3s ease;
-  border-radius: 4px;
 }
 
 .menu-item-list li span:last-child {
-  color: var(--primary-color) !important;
-  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
-  text-shadow: 0 0 5px rgba(200, 9, 19, 0.6);
-  background: rgba(20, 20, 20, 0.8);
-  padding: 2px 8px;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  font-size: 1.1rem;
+  white-space: normal;
+  text-shadow: 0 0 8px rgba(200, 9, 19, 0.6);
+  background: rgba(200, 9, 19, 0.1);
+  padding: 4px 10px;
   border-radius: 4px;
-  border: 1px solid rgba(200, 9, 19, 0.2);
+  border: 1px solid rgba(200, 9, 19, 0.3);
 }
 
 .menu-item-list li:last-child {
@@ -1336,10 +1337,7 @@ nav {
 
 .menu-item-list li:hover {
   color: #fff;
-  padding-left: 12px;
-  background: rgba(200, 9, 19, 0.1);
-  border-color: rgba(200, 9, 19, 0.3);
-  box-shadow: inset 0 0 10px rgba(200, 9, 19, 0.1);
+  padding-left: 4px;
 }
 
 .menu-item-list li span:first-child {
